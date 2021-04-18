@@ -17,7 +17,7 @@ var (
 type Client api.Client
 
 func (client *Client) GetSentSMSDeliveryReports(query GetSentSMSDeliveryReportsQuery) (*SMSReportResponse, error) {
-	path := "/sms/1/reports"
+	path := "/sms/2/reports"
 	method := "GET"
 	var response SMSReportResponse
 
@@ -30,7 +30,7 @@ func (client *Client) GetSentSMSDeliveryReports(query GetSentSMSDeliveryReportsQ
 }
 
 func (client *Client) SendMultipleTextualSMSAdvanced(request SMSAdvancedTextualRequest) (*SMSResponse, error) {
-	path := "/sms/1/text/advanced"
+	path := "/sms/2/text/advanced"
 	method := "POST"
 	var response SMSResponse
 
