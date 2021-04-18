@@ -5,7 +5,7 @@ package sms
 import (
 	"fmt"
 
-	"github.com/infobip/infobip-api-go-client/internal"
+	"github.com/AlleyPin/infobip-api-go-client/internal"
 )
 
 var (
